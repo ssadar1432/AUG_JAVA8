@@ -22,7 +22,10 @@ public class P8_MergeToUnsortedArry {
 	         
 	        int[] b1 = new int[] {8, 1, 9, 5};
 	         
-	        int[] c1 = IntStream.concat(Arrays.stream(a1), Arrays.stream(b1)).sorted().distinct().toArray();
+	        int[] c1 = IntStream.concat(Arrays.stream(a1), Arrays.stream(b1))
+	        		.sorted()
+	        		.distinct()
+	        		.toArray();
 	         
 	        System.out.println(Arrays.toString(c1));
 	        

@@ -10,8 +10,10 @@ public class P33_MaxNumberFromArray {
 	
 	  int[] numArray = {10, 12, 14, 17, 78, 20, 22, 70};
 	  
-	  int max=Arrays.stream(numArray).boxed()
-			  .max(Integer::compareTo).get();
+	  int max=Arrays.stream(numArray)
+			  .boxed()
+			  .max(Integer::compareTo)
+			  .get();
 	  
 	  System.out.println("Max Number : "+max);
 	  
